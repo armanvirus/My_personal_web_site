@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resume</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    
+    .resume{
+        display: flex;
+        justify-content: space-around;
+        width: 80vw;
+        padding: 1.5rem;
+        /* background: rgb(6,23,1);
+        background: linear-gradient(90deg, rgba(6,23,1,0.908000700280112) 0%, rgba(1,33,6,1) 35%, rgba(4,43,5,1) 49%, rgba(4,24,1,0.8631827731092436) 100%); */
+        height: 100%;
+        font-family: 'Poppins', sans-serif;
+    }
+    .resume-left{
+        background: rgb(34,34,36);
+        color: #f2f2f2;
+        box-shadow: 0 0 3px rgb(6,23,1);
+    }
+    .resume-img{
+        width:250px;
+        padding: 30px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 0 0 3px rgb(6,23,1);
+        padding: 15px 0;
+        background: rgba(22,36,0, 0.4);
+
+    }
+    .resume-img img{
+        max-width:150px;
+        height: auto; 
+    }
+    .resume-img p{
+        font-family:"Montserrat";
+        font-style: oblique;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+    .resume-img p::after{
+        content: "'";
+        /* background:red; */
+        color: rgb(8, 215 ,87);
+        font-family:cursive;
+    }
+    .resume-img p::first-letter{
+        font-size: 20px;
+        color: rgb(8, 215 ,87);
+        font-style: italic;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .my-info{
+        padding: 30px;
+    }
+    .composer{
+        padding: 5px;
+    }
+    .composer div:first-child{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 200;
+        /* font-weight: 200; */
+    }
+    .composer div:nth-child(2){
+        font-family:monospace;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    .resume-right{
+        background: rgb(221,221,223);
+    }
+
+    .brife-me{
+        padding: 30px;
+        background: rgba(241,240,243, 0.4);
+    }
+
+    .resume-about-me{
+        font-display:"poppins";
+        padding: 30px;
+        width: 80%;
+        text-align: left;
+    }
+
+    .resume-about-me h4{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+        padding: 10px 0;
+        color: rgb(5 , 0 , 0);
+    }
+
+    .resume-about-me p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .works{
+        width: 100%;
+        min-height: 30vh;
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        margin-left: 30px;
+    }
+
+    .connector-line{
+        min-height: 58Vh;
+        width:2px;
+        background:rgb(241,240,243);
+        border-radius: 10px;
+    }
+    .work-info{
+        padding: 10px;
+    }
+    .work{
+        display: flex;
+        align-items:flex-start;
+    }
+
+    .connector-circle{
+        height:3px;
+        width: 3px;
+        padding: 3px;
+        background:rgb(8, 215 ,87);
+        border-radius: 50%;
+        transform: translateX(-14px);
+        box-shadow: 0 0 3px blue;
+        border: 1px solid #fff;
+    }
+    .work div:nth-child(2) ul{
+        list-style-type:none;
+        padding:10px 0;
+        display: flex;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        text-transform: lowercase;
+    }
+
+    .work div:nth-child(2) ul li:not(:last-child){
+        padding: 0 10px;
+        
+    }
+
+    .edu{
+        padding: 20px 0;
+        width: 90%;
+        text-align: left;
+    }
+
+    .edu > div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin: 10px;
+        font-family: "Montserrat";
+    }
+    .edu-desc{
+        display: block;
+        font-size: 14px;
+        width: 80%;
+    }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <div class="resume-left">
+            <div class="resume-img">
+                <img src="./Images/Aminu1.png" alt="my image">
+                <p>Arman Grema</p>
+            </div>
+
+            <div class="my-info">
+                <div class="composer"> 
+                    <div>phone</div>
+                    <div>+2347011911909</div>
+            </div>
+
+            <div class="composer"> 
+                    <div>email</div>
+                    <div>abdurrahmangrema19@gmail.com</div>
+            </div>
+
+            <div class="composer"> 
+                    <div>LinkIn</div>
+                    <div>Arman Grema</div>
+            </div>
+
+            <div class="composer"> 
+                    <div>website</div>
+                    <div>www.armangrema.com</div>
+            </div>
+
+            <div class="composer"> 
+                    <div>github</div>
+                    <div>www.github.com/armanvirus</div>
+            </div>
+
+            <div class="composer"> 
+                    <div>Address</div>
+                    <div>Hammadu kafi Near byepass road Gombe, Gombe State Nigeria</div>
+            </div>
+            </div>
+            
+        </div>
+
+
+        <div class="resume-right">
+            <div class="brife-me">
+                <h3>ARMAN GREMA</h3>
+                <div>A FULLSTACK FREELANCE WEB DEVELOPER</div>
+            </div>
+
+            <div class="resume-about-me">
+                <h4>ABOUT ME</h4>
+                <P>Lorem ipsum dolor, sit amet consectetur 
+                    adipisicing elit. Eligendi harum quis 
+                    nulla deleniti consequuntur voluptas 
+                    non illum sit! Dolore sint incidunt 
+                    corporis dicta adipisci praesentium 
+                    debitis sequi iure nesciunt doloremque.</P>
+            </div>
+            <div class="works">
+                <div class="connector-line"></div>
+                <div class="work-info">
+                    <div class="work">
+                        <div class="connector-circle"></div>
+                        <div>
+                            <h4>EDUCATION</h4>
+                            <div class="edu">
+                                <div> 
+                                    <div class="dats">2016-2019</div>
+                                    <div class="edu-desc"><strong>Jibwis-</strong> I attended my high school in Jibwis Islamic Science Secondary School Gombe</div>
+                                </div>
+                                <div> 
+                                        <div class="dats">2019-current</div>
+                                        <div class="edu-desc"> <strong>University of Maiduguri-</strong> I stated my high institution journey at University of Maiduguri where i am studying Electrical and electronics Engineering</div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <div class="connector-circle"></div>
+                        <div>
+                            <h4>BASIC SKILLS</h4>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JAVASCRIPT</li>
+                                <li>REACT</li>
+                                <li>NODEJS</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                            <div class="connector-circle"></div>
+                            <div>
+                                <h4>EXPERIANCE</h4>
+                                <div class="edu">
+                                    <div> 
+                                        <div class="dats">2016-2019</div>
+                                        <div class="edu-desc"><strong>Jibwis-</strong> I attended my high school in Jibwis Islamic Science Secondary School Gombe</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>       
+        </div>
+    </div>
+    </div>
+</body>
+</html>

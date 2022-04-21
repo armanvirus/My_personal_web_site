@@ -1,13 +1,16 @@
 import React from 'react';
 import PhoneIcon from "@mui/icons-material/Phone";
 import MailIcon from "@mui/icons-material/Mail"
+import Nav from "./Nav"
 
 
 function Contact(){
             return(
                 <div style={styles.contact} className="contact">
+
+                    <Nav/>
                     <div className="contact-main" style={styles.contactMain}>
-                    <form style={styles.form}>
+                    <form className="form" style={styles.form}>
                         <div className="form-left" style={styles.formLeft}>
                             <h2>Write Us</h2>
                             <div className="line"></div>
@@ -50,7 +53,7 @@ const styles = {
     },
     form:{
         display:"flex",
-        flexDirection:"row",
+        // flexDirection:window.innerWidth > 760 ? "row" : "column",
         justifyContent:"space-between"
     },
     formLeft:{

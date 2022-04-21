@@ -26,7 +26,7 @@
     align-items: center;
     padding: 10px 10px;
 }
-.HomeIcon, .downloadIcon{
+.HomeIcon a, .downloadIcon a{
     color: rgb(49 ,143 , 97);
 }
 
@@ -39,10 +39,15 @@
     flex-direction: column;
 }
 
+
 .NavIcons a{
     display: inline-block;
     padding: 5px 2px;
     color: rgb(179,229,209);
+}
+
+.NavIcons a:hover{
+    transform: scale(1.1)
 }
 .HomeRightMid{
     display: flex;
@@ -84,7 +89,14 @@
 .socialIcons a{
   padding: 0 3px;
 }
+.socialIcons a:hover{
+    transform:translateY(-3px);
+    transition: transfrom 0.8s;
+}
 
+.psedo-adjusta{
+    display: none;
+}
 .hideIt{
     display: none;
 }
@@ -122,13 +134,16 @@
     border-top: solid 2px rgba(179,229,209, 0.1);
     margin-top: 20px;
     padding-top: 15px;
-    
 }
 .card-holder{
     display: flex;
     justify-content: space-between;
-    margin: 20px 0 20px 10px;
+    /* margin: 20px 0 20px 10px; */
+    text-align: justify;
     width: 90%;
+}
+.card{
+    margin: 30px;
 }
 a{
     text-decoration: none;
@@ -165,11 +180,13 @@ img.project-img-show{
     align-items: center;
 }
 
-@media(max-width:760px){
+/* @media(max-width:760px){
     .HomeRight{
         width: 100vw;
         flex-direction: column;
-        display: none;
+        display:flex;
+        z-index: 2;
+        background: red;
     }
 
     .MT{
@@ -206,4 +223,8 @@ img.project-img-show{
         height: 100vh;
 
     }
-}
+
+    .hideIt{
+        display: flex;
+    }
+} */

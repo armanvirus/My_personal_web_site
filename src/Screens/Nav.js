@@ -6,26 +6,27 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import ContactPageIcon from "@mui/icons-material/ContactPage"
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
+import {Link} from "react-router-dom";
 
  function Nav(){
     return(
         <div className="navbar">
             {/* <div className="HomeRightLeft"> */}
             <div className="HomeIcon">
-                <HomeIcon/>
+                <Link to="/"><HomeIcon/></Link>
             </div>
     {/* <Mui/> */}
             <div className="NavIcons">
-                 <a href="/"> <AccountBoxIcon/></a>
-                 <a href="/"> <WorkIcon/> </a>
-                 <a href="/"> <CollectionsBookmarkIcon/> </a>             
-                 <a href="/"> <DescriptionIcon/></a>
+                 <Link to="/about"> <AccountBoxIcon/></Link>
+                 <Link to="/#"> <WorkIcon/> </Link>
+                 <Link to="/"> <CollectionsBookmarkIcon/> </Link>             
+                 <Link to="/resume"> <DescriptionIcon/></Link>
                  {/* <a href="/"></a> */}
-                 <a href="/"> <ContactPageIcon/></a>
+                 <Link to="/contact"> <ContactPageIcon/></Link>
             </div>
 
             <div className="downloadIcon">
-                <CloudDownloadIcon/>
+               <a> <CloudDownloadIcon/> </a>
             </div>
          </div>
         // </div>

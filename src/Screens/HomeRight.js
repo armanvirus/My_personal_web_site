@@ -27,10 +27,12 @@ import ArrowForwadIosIcon from "@mui/icons-material/ArrowForwardIos";
 function HomeRight(props) {
    console.log(props.determiner)
 
-   const leftleft = useRef();
+   const rightleft = useRef();
    const lefti = useRef();
+   const psedoRef = useRef();
         const entery = ()=>{
-            // gsap.to(leftleft.current,{position:'fixed'})
+            // gsap.to(rightleft.current,{position:'fixed', duration:1.1});
+            // gsap.to(psedoRef.current,{display:"block"})
         }
     
         
@@ -40,13 +42,13 @@ function HomeRight(props) {
    
   return (
     <div onMouseEnter={entery} className="HomeRight">
-    <div ref={leftleft}  className="MT">
+    <div ref={rightleft}  className="MT">
     <div className="test">
          <div className="HomeRightLeft">
             <div className="HomeIcon">
                 <HomeIcon/>
             </div>
-u  
+ 
     {/* <Mui/> */}
             <div className="NavIcons">
                  <a href="/"> <AccountBoxIcon/></a>
@@ -64,7 +66,7 @@ u
 
          <div className="HomeRightMid">
 
-              <div  data-aos-duration='500' className="midImg">
+              <div  className="midImg">
                   <img src={Aminu} alt="Mr Arman"/>
               </div>
 
@@ -76,6 +78,7 @@ u
                       <a href="/">  <InstagramIcon/></a>
                       <a href="/"> <TelegramIcon/></a>
                       <a href="/"> <TwitterIcon/></a>
+                      
                   </div>
 
               </div>
@@ -84,40 +87,43 @@ u
          </div>
          </div>
 
-         
+         {/* <div ref={psedoRef} className="psedo-adjusta"></div> */}
 
          <div className={props.determiner}>
               <div className='MidAbout'>
                 <h3>About Me</h3>
                 <div>
-                manifest.json provides metadata used when 
-                your web app is installed on a
-                user's mobile device or desktop 
-                json provides metadata used when 
-                your web app is installed on a
                 
+                Im Arman Grema, 22yrs old from Nigeria, Gombe this.state.
+                Im a self taught Fullstack web developer with 4yrs+ of frontend
+                development experiance and 2yrs of backend coding experiance.
                 
                 </div>
                 <a className="primaryBtn" href="/"> READ MORE</a>
               </div>
 
-              <div className="MidServices">
+              <div id="services" className="MidServices">
               <h2  className="MidS">Services I Offer</h2>
                     <div className="card-holder">
                         <div className="card">
                            <div> <BrushIcon  sx={{fontSize:35, color:"rgb(8, 215 ,87)"}}/> </div>
                              <div><h4>Graphics Design</h4>
-                            <p>manifest.json provides metadata used when 
-                            your web app is installed on a
-                            user's mobile device or desktop</p>
+                            <p>
+                            Need a logo, flyer, cover page, or UI/UX design
+                            for your brand? you are at the rigth flatform, 
+                            just hire me, i am
+                            here to serve your needs.  
+                            </p>
                             </div>
                         </div>
                         <div className="card">
                        <div> <DesktopWindowsOutlinedIcon sx={{fontSize:30, color:"rgb(8, 215 ,87)"}}/> </div>
                             <div><h4>Web Development</h4>
-                            <p>manifest.json provides metadata used when 
-                            your web app is installed on a
-                            user's mobile device or desktop</p>
+                            <p>I offer best web development services 
+                                both frontend and backend, have contract with 
+                                me to get a efficient app coded with clean, dry and well commented
+                                codes.
+                            </p>
                             </div>
                         </div>
                     </div>
@@ -125,9 +131,10 @@ u
                     <div className="card">
                            <div> <PhoneIphoneOutlinedIcon sx={{fontSize:35, color:"rgb(8, 215 ,87)"}}/> </div>
                              <div> <h4>Mobile development</h4>
-                              <p>manifest.json provides metadata used when 
-                              your web app is installed on a
-                              user's mobile device or desktop</p>
+                              <p>Have your Android/Ios app built, with best 
+                                  feartures best working efficiency with React Native,
+                                  the porpular cross-flatform mobile development Liberary.
+                              </p>
                               </div>
                         </div>
 
@@ -135,9 +142,10 @@ u
                             <div><LayersIcon sx={{fontSize:35, color:"rgb(8, 215 ,87)"}}/> </div>
                               <div>
                                 <h4>Database Architecture</h4>
-                                <p>manifest.json provides metadata used when 
-                                your web app is installed on a
-                                user's mobile device or desktop</p>
+                                <p>When your Site grows your data also grows as well and 
+                                    and things get complicated, am here to take away that pain from 
+                                    you. just hire me, its my honor to satisfy your needs.
+                                </p>
                               </div>
                         </div>
                     </div>

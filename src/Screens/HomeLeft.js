@@ -1,5 +1,6 @@
 import React from "react";
 import {useState , useEffect, useRef} from "react";
+import {Link} from "react-router-dom";
 import {gsap} from "gsap";
 import { TextPlugin} from "gsap/TextPlugin"
 import Aminu from"../Images/Aminu.png"
@@ -27,9 +28,10 @@ const togler = ()=>{
 
 
   useEffect(()=>{
-    const timeline = gsap.timeline({defaults:{duration:1.5}});
-    timeline.from(navigates.current,{opacity:0 , x:"-30vw"})
-    .from(img1Ref.current, {scale:0, opacity:0, ease:"linear"})
+    
+    const timeline = gsap.timeline({defaults:{duration:0.9}});
+    // timeline.from(navigates.current,{opacity:0 , x:"-30vw"})
+    timeline.from(img1Ref.current, {scale:0, opacity:0, ease:"linear"})
     .from(type0Ref.current, {y: -30, opacity: 0, ease:"bounce"})
     .from(writerRef.current, {y: -30, opacity: 0, ease:"bounce"})
     .from(btnRef.current, {scale:0, opacity:0, y:100, ease:"back"})
@@ -47,7 +49,7 @@ const togler = ()=>{
         <div></div>
         <div></div>
       </div>
-    <div ref={navigates} className={visible ? 'Homeleftleft':"noleftleft"}>
+    <div  className={visible ? 'Homeleftleft':"noleftleft"}>
         <div className="avatar" >
           <div className="avatarImage">
             <img src={Aminu1}  alt="Avatar"/>
@@ -60,19 +62,18 @@ const togler = ()=>{
         </div>
 
         <div className="HomeLeftNavs">
-        <a href="/"> HOME</a>
-        <a href="/">ABOUT</a>
-        <a href="/">SERVICES</a>
-        <a href="/">PROJECTS</a>
-        <a href="/">RESUME</a>
-        <a href="/">CONTACT</a>
+        <Link to="/"> HOME</Link>
+        <Link to="/about">ABOUT</Link>
+        <Link to="/#services">SERVICES</Link>
+        <Link to="/">PROJECTS</Link>
+        <Link to="/resume">RESUME</Link>
+        <Link to="/contact">CONTACT</Link>
         </div>
 
-        <div className="copyRight">
+        {/* <div className="copyRight">
         <p> copyRight <span className="f"> @arman 2019 </span>
-        You can add webfonts
-      The build step will </p>
-        </div>
+       </p>
+        </div> */}
     </div>
 
     {/* the right side of the Home screen left */}
@@ -84,13 +85,13 @@ const togler = ()=>{
           </h2>
 
           <div ref={writerRef} className="explain">
-            You can add webfonts, meta tags, or analytics to this file.
-            The build step will place the bundled
+            I am freelance web dev, a fast learner,i possess excelent problem solving 
+            capabilities and i am a good reasercher as well, satisfying clients needs is my top priority 
             
           </div>
 
-    <div className="resume">
-      <a ref={btnRef} className="primaryBtn" href="/">VIEW RESUME</a>
+    <div className="resume-btn">
+      <Link ref={btnRef} className="primaryBtn" to="/resume">VIEW RESUME</Link>
     </div>
       </div>
 

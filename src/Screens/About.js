@@ -1,5 +1,6 @@
 
 import Nav from "./Nav";
+import Ratings from "./Ratings"
 
 
 
@@ -12,11 +13,12 @@ function About(){
 
             <div className="aboutContent">
             <h3>Want to Know About Me?</h3>
-            You can add webfonts, meta tags, or analytics to this file.
-            The build step will place the bundled
-            You can add webfonts, meta tags, or analytics to this file.
-            The build step will place the bundledYou can add webfonts, meta tags, or analytics to this file.
-            The build step will place the bundled
+             <p>Im Arman Grema, 22yrs old from Nigeria, Gombe 
+                 this.state. Im a self taught Fullstack web developer 
+                 with 4yrs+ of frontend development 
+                 experiance and 2yrs of backend coding experiance.</p>
+
+            <Ratings/>
             </div>
         </div>
     )

@@ -17,8 +17,8 @@ function Home() {
     setPageR("high")
     setPageL("lowl")
     setDet("HomeRightRight");
-    gsap.to(rightRef.current,{width:"80vw"})
-    gsap.to(leftRef.current,{width:"20vw"})
+    gsap.to(rightRef.current,{width:"80vw", zIndex:3})
+    gsap.to(leftRef.current,{width:"20vw", zIndex:1})
     
   }
 
@@ -26,25 +26,27 @@ function Home() {
     setPageR("low")
     setPageL("high")
     setDet("hideIt") 
-    gsap.to(leftRef.current,{width:"80vw"})
-    gsap.to(rightRef.current,{width:"20vw"})
+    gsap.to(leftRef.current,{width:"80vw", zIndex:3})
+    gsap.to(rightRef.current,{width:"20vw", zIndex:1})
   }
+
 
   useEffect(()=>{
         const timeline = gsap.timeline();
-        timeline.from(leftRef.current,{x:-100, width:0, delay:1})
-        .from(rightRef.current,{x:0,})
+        if(window.innerWidth > 760){
+          timeline.from(leftRef.current,{opacity:0, delay:1})
+        .from(rightRef.current,{opacity:0,})
+        }
 
-       
 
   },[''])
   return (
     <div className="Home">
-    <div ref={leftRef} onMouseEnter={leftPage} className={pageL}>
+    <div ref={leftRef} onMouseEnter={ window.innerWidth > 760 ? leftPage : ()=>{return null}} className={pageL}>
     <HomeLeft/>
     </div>
 
-    <div ref={rightRef} onMouseEnter={rightPage} className={pageR}>
+    <div ref={rightRef} onMouseEnter={ window.innerWidth > 760 ? rightPage : ()=>{return null}} className={pageR}>
     <HomeRight determiner={det}/>
     </div>
       </div>
