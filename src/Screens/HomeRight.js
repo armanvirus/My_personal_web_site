@@ -55,7 +55,7 @@ function HomeRight(props) {
             <div className="NavIcons">
                  <Link to="/about"> <AccountBoxIcon/></Link>
                  <Link to="/"> <WorkIcon/> </Link>
-                 <Link to="/"> <CollectionsBookmarkIcon/> </Link>             
+                 <Link to="/projects"> <CollectionsBookmarkIcon/> </Link>             
                  <Link to="/resume"> <DescriptionIcon/></Link>
                  {/* <a href="/"></a> */}
                  <Link to="/contact"> <ContactPageIcon/></Link>

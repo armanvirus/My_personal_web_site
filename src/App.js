@@ -4,6 +4,7 @@ import Home from './Screens/Home';
 import Contact from './Screens/Contact';
 import About from './Screens/About';
 import Resume from "./Screens/Resume";
+import Projects from "./Screens/Projects";
 import Map from "./Map";
 import "./App.css"
 import AOS from "aos";
@@ -37,6 +38,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/Contact' element={<Contact/>} />
+      <Route path='/Projects' element={<Projects/>} />
       <Route path='/About' element={<About/>} />
       <Route path='/Resume' element={<Resume/>} />
 

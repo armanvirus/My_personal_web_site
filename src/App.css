@@ -333,6 +333,86 @@ textarea:focus{
   flex-direction: row;
 }
 
+/* projects page under constructions */
+
+.courses{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* justify-content: center; */
+  width: 100vw;
+  background:rgb(0,0,4);
+  overflow-x: hidden;
+}
+
+.hero{
+  width: 100vw;
+  position: fixed;
+  /* margin-top: -35vh; */
+}
+/* .hero-texts{
+  top: 55%;
+  left: 150px;
+  
+} */
+/* .hero{
+  width: 100vw;
+  position: relative;
+  
+} */
+.hero img{
+  width: inherit;
+  height: auto;
+  background:rgba(0, 0, 0, .9);
+  
+}
+.image-cover{
+  background: rgba(0, 0, 0, .9);
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+.hero-texts{
+  position:absolute;
+  top:33%;
+  left:30%;
+  color: #fff;
+  margin-right: 30px;
+  font-family: arial narrow;
+}
+.show-case-title{
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+}
+
+.show-case-circle{
+  box-shadow:0 0 2px 3px rgba(0, 0,0,.3),
+  inset 0 0 2px 3px rgba(0, 0,0,.3);
+  border: solid 2px white;
+  height:20px;
+  width:20px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.show-case-title span{
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.hero-texts h2{
+  font-family: agency fb;
+  margin-bottom: 10px;
+}
+.hero-texts p{
+  display: flex;
+  align-items: center;
+}
+
+
 
 /* @media(max-width:760px){
   .Home{
@@ -666,6 +746,22 @@ textarea:focus{
 
   .form{
     flex-direction: column;
+  }
+
+  .hero{
+    height: 100vh;
+    position: fixed;
+    top: 20vh;
+    align-self: center;
+    /* margin-top: -35vh; */
+  }
+  .hero-texts{
+    position:absolute;
+    top:25%;
+    left:30px;
+    color: #fff;
+    margin-right: 30px;
+    font-family: arial narrow;
   }
 
 }

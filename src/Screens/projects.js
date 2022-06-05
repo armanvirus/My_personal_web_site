@@ -1,6 +1,8 @@
+import ConstructionIcon from "@mui/icons-material/Construction";
+import HardwareIcon from "@mui/icons-material/Hardware";
 function Projects(){
     return(
-        <div>
+        <div className="courses">
                 {/* <div>
                     <img/>
                     <div>
@@ -49,7 +51,21 @@ function Projects(){
                     </div>
                 */}
                     
+                    <div className="hero">
+            <img src={require('../Images/cons.jpg')}/>
+            <div className='image-cover'></div>
+            <div className="hero-texts">
+            <div class="show-case-title">
+                        <div class="show-case-circle"></div>
+                        <h2>PAGE IS UNDER CONSTRUCTIONS</h2> <span style={{color:"green"}}><ConstructionIcon/></span>
+                    </div>
+                
+                <p><span><HardwareIcon/></span>For now just take a quick tour throuth my projects in
+                    <a style={{color:"green",marginLeft:6}} href="www.github.com/armanvirus">Github repo</a>
+                    </p>
                     
+            </div>
+            </div>    
                 
         </div>
     )

@@ -65,7 +65,7 @@ const togler = ()=>{
         <Link to="/"> HOME</Link>
         <Link to="/about">ABOUT</Link>
         <Link to="/#services">SERVICES</Link>
-        <Link to="/">PROJECTS</Link>
+        <Link to="/projects">PROJECTS</Link>
         <Link to="/resume">RESUME</Link>
         <Link to="/contact">CONTACT</Link>
         </div>
