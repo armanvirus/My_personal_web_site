@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/ArksClient
+projects.html
+Map.js
+Mui.js
+Resume.html

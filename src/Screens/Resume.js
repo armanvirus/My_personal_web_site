@@ -32,7 +32,7 @@ import LinkIcon from "@mui/icons-material/Link"
 
             <div className="composer"> 
                     <div><LinkedInIcon/>LinkedIn</div>
-                    <div>Arman Grema</div>
+                    <div><a href="https://www.linkedin.com/in/arman-grema-6669341bb">Arman Grema</a></div>
             </div>
 
             <div className="composer"> 

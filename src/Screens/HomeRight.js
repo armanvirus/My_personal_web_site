@@ -1,4 +1,5 @@
 import React, { useState,useEffect, useRef } from "react";
+import {Link} from "react-router-dom";
 import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 // import Mui from "../Mui";
@@ -14,14 +15,15 @@ import ContactPageIcon from "@mui/icons-material/ContactPage"
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import FacebookIcon from "@mui/icons-material/Facebook"
-import InstagramIcon from "@mui/icons-material/Instagram"
-import TelegramIcon from "@mui/icons-material/Telegram"
+import LinkedInIcon from "@mui/icons-material/LinkedIn"
+import GitHubIcon from "@mui/icons-material/GitHub"
 import TwitterIcon from "@mui/icons-material/Twitter"
 import DesktopWindowsOutlinedIcon from "@mui/icons-material/DesktopWindowsOutlined";
 import PhoneIphoneOutlinedIcon from "@mui/icons-material/PhoneIphoneOutlined";
 import LayersIcon from "@mui/icons-material/Layers";
 import BrushIcon from "@mui/icons-material/Brush";
 import ArrowForwadIosIcon from "@mui/icons-material/ArrowForwardIos";
+
 
 
 function HomeRight(props) {
@@ -46,21 +48,21 @@ function HomeRight(props) {
     <div className="test">
          <div className="HomeRightLeft">
             <div className="HomeIcon">
-                <HomeIcon/>
+               <Link to="/"> <HomeIcon/> </Link>
             </div>
  
     {/* <Mui/> */}
             <div className="NavIcons">
-                 <a href="/"> <AccountBoxIcon/></a>
-                 <a href="/"> <WorkIcon/> </a>
-                 <a href="/"> <CollectionsBookmarkIcon/> </a>             
-                 <a href="/"> <DescriptionIcon/></a>
+                 <Link to="/about"> <AccountBoxIcon/></Link>
+                 <Link to="/"> <WorkIcon/> </Link>
+                 <Link to="/"> <CollectionsBookmarkIcon/> </Link>             
+                 <Link to="/resume"> <DescriptionIcon/></Link>
                  {/* <a href="/"></a> */}
-                 <a href="/"> <ContactPageIcon/></a>
+                 <Link to="/contact"> <ContactPageIcon/></Link>
             </div>
 
             <div className="downloadIcon">
-                <CloudDownloadIcon/>
+               <a href="/"> <CloudDownloadIcon/> </a>
             </div>
          </div>
 
@@ -74,10 +76,10 @@ function HomeRight(props) {
                   <div className="n">Arman Grema</div>
                   <span className="stack">Developer</span>
                   <div className="socialIcons">
-                      <a href="/"> <FacebookIcon/></a>
-                      <a href="/">  <InstagramIcon/></a>
-                      <a href="/"> <TelegramIcon/></a>
-                      <a href="/"> <TwitterIcon/></a>
+                      <a href="https://facebook.com/arman.gremaviruse" target="_blank"> <FacebookIcon/></a>
+                      <a href="https://github.com/armanvirus" target="_blank">  <GitHubIcon/></a>
+                      <a href="https://www.linkedin.com/in/arman-grema-6669341bb" target="_blank"> <LinkedInIcon/></a>
+                      <a href="https://twitter.com/armanviruse?s=09" target="_blank"> <TwitterIcon/></a>
                       
                   </div>
 
@@ -99,7 +101,7 @@ function HomeRight(props) {
                 development experiance and 2yrs of backend coding experiance.
                 
                 </div>
-                <a className="primaryBtn" href="/"> READ MORE</a>
+                <Link className="primaryBtn" to="/about"> READ MORE</Link>
               </div>
 
               <div id="services" className="MidServices">

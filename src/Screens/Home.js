@@ -42,7 +42,7 @@ function Home() {
   },[''])
   return (
     <div className="Home">
-    <div ref={leftRef} onMouseEnter={ window.innerWidth > 760 ? leftPage : ()=>{return null}} className={pageL}>
+    <div style={style.left} ref={leftRef} onMouseEnter={ window.innerWidth > 760 ? leftPage : ()=>{return null}} className={pageL}>
     <HomeLeft/>
     </div>
 
@@ -53,4 +53,10 @@ function Home() {
   );
 }
 
+const style = {
+  left:{
+    background:"rgba(22,36,0, 0.7)",
+    with:"100vw"
+  }
+}
 export default Home;

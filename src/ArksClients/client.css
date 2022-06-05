@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100vw;
+    padding: 10px 30px;
+    background: #00798c;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 3px #111;
+    color: rgba(245, 230 ,240, 0.8);
+}
+
+.header div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 35%;
+}
+
+.header div:first-child img{
+    margin-right: 10px;
+}
+.search{
+    padding: 3px;
+    background:rgba(245, 230 ,240, 0.3);
+    border-radius: 8px
+}
+.header div:nth-child(1) input{
+    background:rgba(245, 230 ,240, 0.3);
+    background-image: url('./glass.png');
+    background-size: 25px;
+    background-position:right;
+    background-repeat: no-repeat;
+    color:#fff;
+    font-weight: 600;
+    outline: none;
+    border:none;
+    border-radius: 7px;
+    padding: 6px 30px;
+    height: 30px;
+    min-width: 250px;
+}
+.header div:nth-child(1) input::placeholder{
+    color:#fff;
+    font-weight: 500;
+    font-style: oblique;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+li a{
+    display: inline-block;
+    padding:3px 10px;
+}
