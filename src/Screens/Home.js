@@ -3,7 +3,8 @@ import {useState, useEffect, useRef} from "react";
 import HomeLeft from './HomeLeft';
 import HomeRight from './HomeRight'
 import {gsap} from "gsap";
-import { TextPlugin} from "gsap/TextPlugin"
+import { TextPlugin} from "gsap/TextPlugin";
+import useMediaQuery from "@mui/material/useMediaQuery"
 
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
   const [det , setDet]   = useState('hideIt');
   const leftRef = useRef();
   const rightRef = useRef();
+  const isDesktop = useMediaQuery('(min-width:700px)');
   
   const rightPage = (e)=>{
     setPageR("high")
@@ -33,7 +35,7 @@ function Home() {
 
   useEffect(()=>{
         const timeline = gsap.timeline();
-        if(window.innerWidth > 760){
+        if(isDesktop){
           timeline.from(leftRef.current,{opacity:0, delay:1})
         .from(rightRef.current,{opacity:0,})
         }
@@ -42,11 +44,11 @@ function Home() {
   },[''])
   return (
     <div className="Home">
-    <div style={style.left} ref={leftRef} onMouseEnter={ window.innerWidth > 760 ? leftPage : ()=>{return null}} className={pageL}>
+    <div style={style.left} ref={leftRef} onMouseEnter={ isDesktop ? leftPage : ()=>{return null}} className={pageL}>
     <HomeLeft/>
     </div>
 
-    <div ref={rightRef} onMouseEnter={ window.innerWidth > 760 ? rightPage : ()=>{return null}} className={pageR}>
+    <div ref={rightRef} onMouseEnter={ isDesktop ? rightPage : ()=>{return null}} className={pageR}>
     <HomeRight determiner={det}/>
     </div>
       </div>

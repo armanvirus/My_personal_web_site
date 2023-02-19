@@ -151,7 +151,8 @@ width: 45%;
 }
 .Myimg img{
   max-width: 350px;
-  max-height: auto;
+  /* max-height: au; */
+  height:100%;
   
 }
 
