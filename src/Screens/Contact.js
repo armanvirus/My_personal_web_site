@@ -12,7 +12,7 @@ function Contact(){
                     <div className="contact-main" style={styles.contactMain}>
                     <form className="form" style={styles.form}>
                         <div className="form-left" style={styles.formLeft}>
-                            <h2>Write Me</h2>
+                            <h2>HIRE ME</h2>
                             <div className="line"></div>
                             <div style={styles.inputs}>
                                 <label for="name">Name</label>
