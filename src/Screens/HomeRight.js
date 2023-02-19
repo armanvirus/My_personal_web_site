@@ -97,7 +97,7 @@ function HomeRight(props) {
                 <h3>About Me</h3>
                 <div>
                 
-                Im Arman Grema, 22yrs old from Nigeria, Gombe this.state.
+                Im Arman Grema,
                 Im a self taught Fullstack web developer with 4yrs+ of frontend
                 development experiance and 2yrs of backend coding experiance.
                 
@@ -152,6 +152,7 @@ function HomeRight(props) {
                               </div>
                         </div>
                     </div>
+                        <Link className="primaryBtn" to="/contact"> HIRE ME</Link>
 
               </div>
          </div>

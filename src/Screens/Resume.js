@@ -62,8 +62,7 @@ import LinkIcon from "@mui/icons-material/Link"
 
             <div className="resume-about-me">
                 <h4>ABOUT ME</h4>
-                <p>Im Arman Grema, 22yrs old from Nigeria, 
-                    Gombe this.state. Im a self taught Fullstack 
+                <p>Im Arman Grema, Im a self taught Fullstack 
                     web developer with 4yrs+ of frontend development 
                     experiance and 2yrs of backend coding experiance.</p>
             </div>
