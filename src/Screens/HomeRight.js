@@ -43,7 +43,7 @@ function HomeRight(props) {
         },[''])
    
   return (
-    <div onMouseEnter={entery} className="HomeRight">
+    <div  className="HomeRight">
     <div ref={rightleft}  className="MT">
     <div className="test">
          <div className="HomeRightLeft">
@@ -90,8 +90,9 @@ function HomeRight(props) {
          </div>
 
          {/* <div ref={psedoRef} className="psedo-adjusta"></div> */}
+         <div className="bridge"></div>
 
-         <div className={props.determiner}>
+         <div>
               <div className='MidAbout'>
                 <h3>About Me</h3>
                 <div>

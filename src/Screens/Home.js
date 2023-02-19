@@ -15,22 +15,22 @@ function Home() {
   const rightRef = useRef();
   const isDesktop = useMediaQuery('(min-width:700px)');
   
-  const rightPage = (e)=>{
-    setPageR("high")
-    setPageL("lowl")
-    setDet("HomeRightRight");
-    gsap.to(rightRef.current,{width:"80vw", zIndex:3})
-    gsap.to(leftRef.current,{width:"20vw", zIndex:1})
+  // const rightPage = (e)=>{
+  //   setPageR("high")
+  //   setPageL("lowl")
+  //   setDet("HomeRightRight");
+  //   gsap.to(rightRef.current,{width:"80vw", zIndex:3})
+  //   gsap.to(leftRef.current,{width:"20vw", zIndex:1})
     
-  }
+  // }
 
-  const leftPage = (e)=>{
-    setPageR("low")
-    setPageL("high")
-    setDet("hideIt") 
-    gsap.to(leftRef.current,{width:"80vw", zIndex:3})
-    gsap.to(rightRef.current,{width:"20vw", zIndex:1})
-  }
+  // const leftPage = (e)=>{
+  //   setPageR("low")
+  //   setPageL("high")
+  //   setDet("hideIt") 
+  //   gsap.to(leftRef.current,{width:"80vw", zIndex:3})
+  //   gsap.to(rightRef.current,{width:"20vw", zIndex:1})
+  // }
 
 
   useEffect(()=>{
@@ -44,12 +44,12 @@ function Home() {
   },[''])
   return (
     <div className="Home">
-    <div style={style.left} ref={leftRef} onMouseEnter={ isDesktop ? leftPage : ()=>{return null}} className={pageL}>
+    {/* <div style={style.left} ref={leftRef} onMouseEnter={ isDesktop ? leftPage : ()=>{return null}} className={pageL}>
     <HomeLeft/>
-    </div>
+    </div> */}
 
-    <div ref={rightRef} onMouseEnter={ isDesktop ? rightPage : ()=>{return null}} className={pageR}>
-    <HomeRight determiner={det}/>
+    <div>
+    <HomeRight />
     </div>
       </div>
   );

@@ -49,6 +49,10 @@
 .NavIcons a:hover{
     transform: scale(1.1)
 }
+.bridge{
+    width:380px;
+    height: 100%;
+}
 .HomeRightMid{
     display: flex;
     flex-direction: column;
@@ -57,7 +61,7 @@
 .HomeRightMid, .midImg{
     height: 100vh;
     background: rgb(7 ,8 ,10);
-    max-width: 90%;
+    width:350px;
 }
 
 
@@ -108,7 +112,7 @@
 }
 
 .MidAbout{
-    max-width: 60%;
+    max-width: 400px;
     text-align: justify;
 }
 
@@ -116,6 +120,7 @@
     text-align: left;
     font-size: 30px;
     font-weight: 800;
+    margin-bottom: 2rem;
     font-family: agency fb;
 }
 
@@ -137,14 +142,16 @@
 }
 .card-holder{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     /* margin: 20px 0 20px 10px; */
-    text-align: justify;
+    text-align: left;
     width: 90%;
 }
 .card{
-    margin: 30px;
+    margin: 30px 30px 30px 0;
+    /* max-width: 400px; */
 }
+
 a{
     text-decoration: none;
     color: #f2f2f2;

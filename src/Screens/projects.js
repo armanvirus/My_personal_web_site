@@ -1,5 +1,6 @@
 import ConstructionIcon from "@mui/icons-material/Construction";
 import HardwareIcon from "@mui/icons-material/Hardware";
+import { Link } from "react-router-dom";
 function Projects(){
     return(
         <div className="courses">
@@ -52,7 +53,7 @@ function Projects(){
                 */}
                     
                     <div className="hero">
-            <img src={require('../Images/cons.jpg')}/>
+            <img style={{objectFit:"cover"}} src={require('../Images/cons.jpg')}/>
             <div className='image-cover'></div>
             <div className="hero-texts">
             <div class="show-case-title">
@@ -63,6 +64,8 @@ function Projects(){
                 <p><span><HardwareIcon/></span>For now just take a quick tour throuth my projects in
                     <a style={{color:"green",marginLeft:6}} href="www.github.com/armanvirus">Github repo</a>
                     </p>
+
+                    <Link to="/">Back to Home</Link>
                     
             </div>
             </div>    
