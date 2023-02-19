@@ -1,6 +1,6 @@
 import React from "react"
 import "../Resume.css";
-import Aminu1 from"../Images/Aminu1.png"
+import Arman from"../Images/arman.png"
 import Nav from "./Nav";
 import MyLocationIcon from "@mui/icons-material/MyLocation";
 import GitHubIcon from "@mui/icons-material/GitHub"
@@ -15,7 +15,7 @@ import LinkIcon from "@mui/icons-material/Link"
         <div className="resume">
         <div className="resume-left">
             <div className="resume-img">
-                <img src={Aminu1} alt="my image"/>
+                <img src={Arman} alt="my image"/>
                 <p> Arman Grema</p>
             </div>
 
