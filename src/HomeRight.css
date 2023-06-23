@@ -195,6 +195,9 @@ img.project-img-show{
         margin: 30px 0px 30px 0;
         /* max-width: 400px; */
     }
+    .primaryBtn.hire{
+        margin-left:30px;
+      }
 }
 /* @media(max-width:760px){
     .HomeRight{
