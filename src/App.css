@@ -137,6 +137,10 @@ width: 45%;
   
 }
 
+.primaryBtn.hire{
+  margin-left:30px;
+}
+
 .primaryBtn:hover{
   background:rgb(8, 215 ,87);
   color: #fff;

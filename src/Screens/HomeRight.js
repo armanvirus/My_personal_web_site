@@ -152,7 +152,7 @@ function HomeRight(props) {
                               </div>
                         </div>
                     </div>
-                        <Link className="primaryBtn" to="/contact"> HIRE ME</Link>
+                        <Link className="primaryBtn hire" to="/contact"> HIRE ME</Link>
 
               </div>
          </div>
