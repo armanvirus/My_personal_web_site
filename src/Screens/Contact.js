@@ -8,7 +8,7 @@ function Contact(){
             return(
                 <div style={styles.contact} className="contact">
 
-                    <Nav/>
+                    {/* <Nav/> */}
                     <div className="contact-main" style={styles.contactMain}>
                     <form className="form" style={styles.form}>
                         <div className="form-left" style={styles.formLeft}>
@@ -19,7 +19,7 @@ function Contact(){
                                 <input type="text" name="name" id="name"/>
                                 <label for="Email">Email</label>
                                 <input type="email" name="email" id="Email"/>
-                                <label for="name">Terms and conditions</label>
+                                <label for="name">Terms</label>
                                 <input type="checkbox" name="name" id="check"/>
                             </div>
                         </div>
@@ -39,12 +39,13 @@ function Contact(){
 
 const styles = {
     contact:{
-        background:"rgb(231, 234, 240)",
+        // background:"rgb(231, 234, 240)",
         display:"flex",
-        height:"100vh",
-        width:"100vw",
-        justifyContent:"center",
-        alignItems:"center"
+        // height:"100vh",
+        // width:"100vw",
+        justifyContent:"left",
+        alignItems:"center",
+        marginTop:"3rem"
     },
     contactMain:{
         background: "rgb(41 ,44 ,53)",

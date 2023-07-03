@@ -11,7 +11,7 @@ import LinkIcon from "@mui/icons-material/Link"
  const Resume = ()=>{
     return(
     <div className="resume-container">
-            <Nav/>
+            {/* <Nav/> */}
         <div className="resume">
         <div className="resume-left">
             <div className="resume-img">

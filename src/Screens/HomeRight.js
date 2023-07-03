@@ -4,6 +4,9 @@ import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 // import Mui from "../Mui";
 import "../HomeRight.css";
+import Ratings from "./Ratings"
+import Resume from './Resume'
+import Contact from "./Contact"
 import Aminu from"../Images/Aminu.png";
 import E3 from"../Images/E3.JPG";
 import E2 from"../Images/E2.JPG";
@@ -92,7 +95,7 @@ function HomeRight(props) {
          {/* <div ref={psedoRef} className="psedo-adjusta"></div> */}
          <div className="bridge"></div>
 
-         <div>
+         <div className="whole">
               <div className='MidAbout'>
                 <h3>About Me</h3>
                 <div>
@@ -154,6 +157,40 @@ function HomeRight(props) {
                     </div>
                         <Link className="primaryBtn hire" to="/contact"> HIRE ME</Link>
 
+                        <div className="staks">
+                                <h2>Stacks</h2>
+                                <p>Here are languages,liberaries and frameworks <br/> i frequently use.
+                                </p>
+                            <div className="staks-row-1">
+                                <div className="stak">JavaScript</div>
+                                <div className="stak">Python</div>
+                                <div className="stak">Reactjs</div>
+                                <div className="stak">Vuejs</div>
+                            </div>
+                            <div className="staks-row-1">
+                                <div className="stak">Nodejs</div>
+                                <div className="stak">Expressjs</div>
+                                <div className="stak">Mongodb</div>
+                                <div className="stak">MySql</div>
+                            </div>
+                            <div>
+                            <Ratings/>
+                            </div>
+                            <h2 className="tools">Tools</h2>
+                                <p>
+                                    Here are languages,liberaries and frameworks <br/> i frequently use.
+                                </p>
+                            <div className="staks-row-1">
+                                <div className="stak">Github</div>
+                                <div className="stak">Postman</div>
+                                <div className="stak">Gitlab</div>
+                                <div className="stak">Jupyter note book</div>
+                            </div>
+                        </div>
+                           <div className="resume-embed"> 
+                               <Resume/> 
+                            </div>
+                            <Contact/>
               </div>
          </div>
       </div>
