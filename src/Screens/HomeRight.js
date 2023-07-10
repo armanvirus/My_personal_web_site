@@ -56,7 +56,7 @@ function HomeRight(props) {
  
     {/* <Mui/> */}
             <div className="NavIcons">
-                 <Link to="/about"> <AccountBoxIcon/></Link>
+                 <Link to="/#about"> <AccountBoxIcon/></Link>
                  <Link to="/"> <WorkIcon/> </Link>
                  <Link to="/projects"> <CollectionsBookmarkIcon/> </Link>             
                  <Link to="/resume"> <DescriptionIcon/></Link>
@@ -96,7 +96,7 @@ function HomeRight(props) {
          <div className="bridge"></div>
 
          <div className="whole">
-              <div className='MidAbout'>
+              <div id="about" className='MidAbout'>
                 <h3>About Me</h3>
                 <div>
                 
