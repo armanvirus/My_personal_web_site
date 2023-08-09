@@ -62,9 +62,13 @@ import LinkIcon from "@mui/icons-material/Link"
 
             <div className="resume-about-me">
                 <h4>ABOUT ME</h4>
-                <p>Im Arman Grema, Im a self taught Fullstack 
-                    web developer with 4yrs+ of frontend development 
-                    experiance and 2yrs of backend coding experiance.</p>
+                <p>Since 2017/2018, I've been passionately navigating the 
+                    MERN stack landscape. With years of expertise, I specialize 
+                    in molding MongoDB, Express.js, React, and 
+                    Node.js into powerful web applications.
+                     My journey has been one of 
+                    constant growth, resulting in finely tuned 
+                    skills that bring seamless, dynamic user experiences to life.</p>
             </div>
             <div className="works">
                 <div className="connector-line"></div>
@@ -75,12 +79,18 @@ import LinkIcon from "@mui/icons-material/Link"
                             <h4>EDUCATION</h4>
                             <div className="edu">
                                 <div> 
-                                    <div className="dats">2016-2019</div>
-                                    <div className="edu-desc"><strong>Jibwis</strong> I attended my high school in Jibwis Islamic Science Secondary School Gombe</div>
+                                    <div className="dats">2017-now</div>
+                                    <div className="edu-desc"><strong>Self Taught</strong> Self-taught since 2017, evolving relentlessly.
+                                     From basics to mastery, a journey marked by continuous growth and coding prowess.</div>
                                 </div>
                                 <div> 
                                         <div className="dats">2019-Now</div>
-                                        <div className="edu-desc"> <strong>University of Maiduguri-</strong> I stated my high institution journey at University of Maiduguri where i am studying Electrical and electronics Engineering</div>
+                                        <div className="edu-desc"> <strong>University of Maiduguri-</strong>
+                                        Since 2019, my University of Maiduguri electrical 
+                                        engineering journey has been illuminating.
+                                         From theoretical foundations to practical applications, 
+                                        I've thrived on challenges, honing skills that fuse 
+                                        innovation with technical expertise.</div>
                                     </div>
                             </div>
                         </div>
@@ -101,6 +111,8 @@ import LinkIcon from "@mui/icons-material/Link"
                                 <li>React Native</li>
                                 <li>Ionic</li>
                                 <li>NODEJS</li>
+                                <li>MONGODB</li>
+                                <li>PYTHON</li>
                             </ul>
                         </div>
                     </div>
@@ -111,8 +123,20 @@ import LinkIcon from "@mui/icons-material/Link"
                                 <h4>EXPERIANCE</h4>
                                 <div className="edu">
                                     <div> 
-                                        <div className="dats">2018-Now</div>
-                                        <div className="edu-desc"> i work as a local freelance web developer</div>
+                                        <div className="dats">2018-2021</div>
+                                        <div className="edu-desc"> A local freelance web developer</div>
+                                    </div>
+                                </div>
+                                <div className="edu">
+                                    <div> 
+                                        <div className="dats">2022-2023</div>
+                                        <div className="edu-desc"> Intern At DOPALS TECHNLOGIES</div>
+                                    </div>
+                                </div>
+                                <div className="edu">
+                                    <div> 
+                                        <div className="dats">2023-Now</div>
+                                        <div className="edu-desc"> MERN Dev At Strano.io</div>
                                     </div>
                                 </div>
                             </div>
